@@ -1,0 +1,40 @@
+<%- include('partials/header.ejs') %> 
+
+<div class="row">
+  <div class="card border-0 text-center">
+    <img class="card-img article-image" src="<%=article.img%>" alt="article image">
+    <div class="article-info">
+          <div class="card-header display-4 bg-white border-0">
+      <%= article.title %>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item border-0 blog-body article-verse" >  
+        <%= article.verse %>
+      </li>
+      <li class="list-group-item border-0 blog-body" >  
+        <%= article.blogBody %>
+      </li>
+      <li class="list-group-item text-muted border-0"><%= article.createdAt.toLocaleDateString() %></li>
+    </ul>
+    </div>
+
+  </div>
+</div>
+
+</div>
+
+
+<div class="article-btns">
+  <a class="btn btn-success" href="/articles">All Articles</a>
+
+  <a class="btn btn-warning" href="/articles/<%= article._id %>/edit">Edit Article</a>
+
+  <form action="/articles/<%=article._id%>?_method=DELETE" method="POST">
+    <button class="btn btn-danger">Delete Article</button>
+  </form>
+   
+</div>
+
+
+  
+  <%- include('./partials/footer') %> 

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minute Meditation</title>
+
+  <!-- GOOGLE FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
+
+<!-- FONT AWESOME -->
+<script src="https://kit.fontawesome.com/abe1c9cbd2.js" crossorigin="anonymous"></script>
+
+<!-- CSS -->
+  <link href="/test-style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <div class="menu-bar">
+      <button id="menu-btn"><i class="fa-solid fa-bars"></i></button>
+      <div class="menu-title">
+      <p>minute meditation</p>
+      </div>
+      <button id="menu-btn"><i class="fa-solid fa-heart"></i></button>
+    </div>
+
+    <div class="menu-screen" id="menu-screen">
+      <div class="menu-screen-item"><a href="/test">Home</a></div>
+      <div class="menu-screen-item"><a href="/articles">Writing</a></div>
+      <div class="menu-screen-item"><a href="/test">About</a></div>
+      <div class="menu-screen-item"><a href="/test">Contact</a></div>
+    </div>
+
+    <p class="menu-motto">
+      small moments BIG IMPACT
+    </p>
+
+  </header>
+
+
+  <main>
+
+    <div class="recent-container">
+
+      <div class='recent-image-container'>
+        <a href="/articles/<%= article1._id %>">   <img class="recent-image" src="<%= article1.img %>" alt="photo"></a>
+      </div>
+
+
+      <div class="recent-info">
+        <p class="recent-title">
+        <%= article1.title %>
+        </p>
+        <p class="recent-quote">"<%= article1.quote %>"</p>
+        <a href="/articles/<%= article1._id %>"><button id="recent-read-btn">read</button></a>
+      </div>
+    </div>
+
+    <div class="recent-card-master">
+      <p class="recent-card-text">Recent Posts</p>
+
+      <div class="recent-card-container">
+        <div class="recent-card">
+          <a href="/articles/<%= article2._id %>">  <img class="recent-card-img" src="<%= article2.img %>" alt="">
+          <p class="recent-card-title"><%= article2.title %></p>
+          </a>
+        </div>
+
+        <div class="recent-card">
+          <a href="/articles/<%= article3._id %>">  <img class="recent-card-img" src="<%= article3.img %>" alt="">
+          <p class="recent-card-title"><%= article3.title %></p>
+          </a>
+        </div>
+
+        <div class="recent-card">
+          <a href="/articles/<%= article4._id %>">  <img class="recent-card-img" src="<%= article4.img %>" alt="">
+          <p class="recent-card-title"><%= article4.title %></p>
+          </a>
+        </div>
+      </div>
+      
+    </div>
+
+    
+    
+
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="header-motto">small moments <b>BIG IMPACT</b></div>
+      <span>&copy; Minute Meditation 2022</span>
+    </div>
+  </footer>
+
+<script src="/app.js"></script>
+
+</body>
+</html>

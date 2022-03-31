@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minute Meditation</title>
+  <!-- BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- GOOGLE FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
+<!-- CSS -->
+  <link href="/header-style.css" rel="stylesheet">
+</head>
+
+<body>
+  <main>
+    <header class="header">
+      <div class="header-nav">
+        <a href="/articles/">Writings</a>
+        <a href="/articles/">About</a>
+        <a href="">Contact</a>
+      </div>
+      <div class="header-container">
+        <div class="header-motto">small moments <b>BIG IMPACT</b></div>
+        <div class="header-name">Minute Meditation</div>
+      </div>
+    </header>
+  
+    <div class="recent-container">
+      <img class="recent-image" src="<%= article.img %> " alt="photo">
+      <div class="recent-title"> Recent Post: <b><%= article.title %></b> </div>
+    </div>
+  </main>
+
+  <article class="about">
+    <div class="about-image-border">
+      <img class="about-image" src="/images/mustard seed.jpeg" alt="mustard seed">
+    </div>
+
+    <div class="about-description">
+      <div class="about-title"> About Minute Meditation</div>
+      <div class="about-text">
+        <span>
+          He said to them, “Because of your little faith. For truly, I say to you, if you have faith like a grain of mustard seed, you will say to this mountain, ‘Move from here to there,’ and it will move, and nothing will be impossible for you.”
+        </span>
+        <br>
+        <b>Matthew 17:20</b>
+        <br>
+        <br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus modi in deserunt magnam numquam et ratione eius ipsa, officia voluptate ab ex magni eveniet expedita aut voluptatum minima adipisci incidunt?
+      </div>
+    </div>
+  </article>
+
+  <footer class="footer py-3 mt-auto">
+    <div class="container">
+      <div class="header-motto">small moments <b>BIG IMPACT</b></div>
+      <span>&copy; Minute Meditation 2022</span>
+    </div>
+  </footer>
+
+
+    <!-- <div class="recent-quote">"Only when we have 'no way' are we finally open to 'every way' He provides."</div> -->
+
+  
+
+  <!-- </div> -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</body>
+</html>

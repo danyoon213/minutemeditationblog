@@ -1,0 +1,72 @@
+<%- include('./partials/header') %> 
+
+  <h1>Form for Edit Post</h1>
+  <form action="/articles/<%= article._id %>?_method=PUT" method="POST">
+    <div>
+      <label for="title">Title</label>
+      <input type="text" id="title" name="article[title]" value="<%= article.title %>">
+    </div>
+    <div>
+      <label for="topic">What is the Topic?</label>
+      <input type="text" id="topic" name="article[topic]" value="<%= article.topic %> ">
+    </div>
+    <div>
+      <label for="quote">One Sentance Quote</label>
+      <input type="text" id="quote" name="article[quote]" value="<%= article.quote %> ">
+    </div>
+    <div>
+      <label for="verse">Put the Full Verse Here</label>
+      <textarea type="text" id="verse" name="article[verse]" value="<%= article.verse %> "><%= article.verse %></textarea>
+    </div>
+    <div>
+      <label for="blogBody">Type in Blog Here</label>
+      <textarea type="text" id="blogBody" name="article[blogBody]" value="<%= article.blogBody %> "><%= article.blogBody %></textarea>
+    </div>
+    <div>
+      <label for="img">IMG URL</label>
+      <input type="text" id="img" name="article[img]" value="<%= article.img %> ">
+    </div>
+    <button>Update Article</button>
+  </form>
+  <a href="/articles/<%= article._id %> ">Back to Article</a>
+
+
+
+  <div class="row">
+    <h1 class="text-center">New Post</h1>
+  <div class="col-6 offset-3">
+    <h1>Form for New Post</h1>
+    <form action="/articles/<%= article._id %>?_method=PUT" method="POST">
+      <div>
+        <label class="form-label" for="title">Title</label>
+        <input class="form-control" type="text" id="title" name="article[title]" value="<%= article.title %>">
+      </div>
+      <div>
+        <label class="form-label" for="verse">What Verses</label>
+        <input class="form-control" type="text" id="verse" name="article[verse]" value="<%= article.verse %>">
+      </div>
+      <div>
+        <label class="form-label" for="category">What Category</label>
+        <input class="form-control" type="text" id="category" name="article[category]" value="<%= article.category %>">
+      </div>
+      <div>
+        <label class="form-label" for="description">One Sentence Question</label>
+        <input class="form-control" type="text" id="description" name="article[description]" value="<%= article.description %>">
+      </div>
+      <div>
+        <label class="form-label" for="blogBody">Type in Blog Here</label>
+        <textarea class="form-control" type="text" id="blogBody" name="article[blogBody]"><%= article.blogBody %></textarea>
+      </div>
+      <div>
+        <label class="form-label" for="img">IMG URL</label>
+        <input class="form-control" type="text" id="img" name="article[img]" value="<%= article.img %>">
+      </div>
+      <button class="btn btn-info my-3">Update Post</button>
+    </form>
+    <a href="/articles/<%= article._id %>">Back to Article</a>
+  </div>
+
+
+
+
+<%- include('./partials/footer') %> 

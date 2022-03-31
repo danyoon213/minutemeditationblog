@@ -1,0 +1,75 @@
+* {
+  font-family: "Crimson Pro";
+}
+
+/* FOOTER */
+
+footer {
+  text-align: center;
+}
+
+/* INDEX PAGE */
+
+.card-image {
+  width: 250px;
+  height: 250px;
+}
+
+/* SHOW PAGE */
+
+.show-img {
+  box-shadow: 4px 4px 5px black;
+}
+
+.show-paragraph {
+  font-size: 1.2rem;
+}
+
+.blog-body {
+  white-space: pre-wrap;
+}
+
+.article-image {
+  max-height: 600px;
+}
+
+.article-verse {
+  font-style: italic;
+  font-size: 1.2rem;
+}
+
+.btn {
+  width: 150px;
+  color: white;
+  margin: 10px 0;
+}
+
+.article-btns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+@media only screen and (min-width: 1080px) {
+  .card {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+  }
+  .article-image {
+    width: 100%;
+    max-height: 100vh;
+  }
+  .article-info {
+    width: 100%;
+  }
+  .article-btns {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .btn {
+    width: 250px;
+    font-size: 2rem;
+  }
+}

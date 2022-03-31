@@ -1,0 +1,40 @@
+<%- include('./partials/header') %> 
+
+<div class="row">
+  <h1 class="text-center">New Post</h1>
+  <div class="col-6 offset-3">
+    <h1>Form for New Post</h1>
+    <form action="/articles" method="POST">
+      <div>
+        <label class="form-label" for="title">Title</label>
+        <input class="form-control" type="text" id="title" name="article[title]">
+      </div>
+      <div>
+        <label class="form-label" for="topic">What is the Topic?</label>
+        <input class="form-control" type="text" id="topic" name="article[topic]">
+      </div>
+      <div>
+        <label class="form-label" for="quote">One Sentence Quote</label>
+        <input class="form-control" type="text" id="quote" name="article[quote]">
+      </div>
+      <div>
+        <label class="form-label" for="verse">Put the Full Verse Here</label>
+        <textarea class="form-control" type="text" id="verse" name="article[verse]"></textarea>
+      </div>
+      <div>
+        <label class="form-label" for="blogBody">Type in Blog Here</label>
+        <textarea class="form-control" type="text" id="blogBody" name="article[blogBody]"></textarea>
+      </div>
+      <div>
+        <label class="form-label" for="img">IMG URL</label>
+        <input class="form-control" type="text" id="img" name="article[img]">
+      </div>
+      <button class="btn btn-success my-3">Submit</button>
+    </form>
+    <a href="/articles">All Articles</a>
+  </div>
+</div>
+
+  
+
+  <%- include('./partials/footer') %> 

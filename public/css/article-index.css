@@ -1,0 +1,138 @@
+* {
+  font-family: "Crimson Pro";
+}
+
+/* MENU */
+
+header {
+  background-color: white;
+}
+
+.menu-screen {
+  background-color: rgb(50, 50, 50);
+  width: 100%;
+  height: 0;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  overflow: hidden;
+  transition: height 0.5s ease-in-out;
+}
+
+.menu-screen-item {
+  border-bottom: 1px solid white;
+}
+
+.menu-screen-item a {
+  text-decoration: none;
+  color: white;
+  line-height: 200px;
+  font-size: 140px;
+  overflow: hidden;
+}
+
+.menu-bar {
+  height: 50px;
+  background-color: rgb(50, 50, 50);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.menu-bar button,
+.menu-bar div,
+.menu-bar a {
+  color: white;
+  font-size: 1.5rem;
+  line-height: 3rem;
+}
+
+.menu-bar button {
+  border: none;
+  background-color: rgb(50, 50, 50);
+  cursor: pointer;
+}
+
+.menu-title p {
+  font-weight: 200;
+  overflow: hidden;
+  border-right: 0.15em solid orange;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  animation: typing 3.5s steps(40, end), blinking 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blinking {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+.menu-bar a {
+  text-decoration: none;
+}
+
+/* FOOTER */
+
+footer {
+  text-align: center;
+}
+
+/* INDEX PAGE */
+
+.index-header {
+  text-align: center;
+}
+
+.write-new-btn {
+  font-size: 2rem;
+  padding: 10px;
+}
+
+.index-card {
+  /* border: 1px solid grey; */
+  padding: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
+  box-shadow: 3px 3px 6px grey;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.index-card-image {
+  align-self: center;
+  width: 400px;
+  height: 400px;
+}
+
+.index-card-body {
+  padding: 10px;
+}
+
+.index-card-title {
+  font-size: 2.5rem;
+}
+
+.index-card-text {
+  font-size: 1.8rem;
+}
+
+.view-post-btn {
+  font-size: 2rem;
+  padding: 10px;
+}

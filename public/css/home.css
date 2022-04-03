@@ -110,7 +110,7 @@ header {
   padding-bottom: 20px;
   background-color: white;
   opacity: 0;
-  animation: 2.5s fadein .4s ease-in forwards;
+  animation: 2.5s fadein 0.4s ease-in forwards;
 }
 
 @keyframes fadein {
@@ -229,7 +229,8 @@ footer {
 
 @media only screen and (min-width: 1080px) {
   .recent-container {
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
   .recent-image {
     margin: 50px;
@@ -238,5 +239,19 @@ footer {
   }
   .recent-info {
     padding: 25px;
+  }
+}
+
+@media only screen and (min-width: 1700px) {
+  .recent-container {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+    grid-template-areas: "... image info ...";
+  }
+  .recent-image-container {
+    grid-area: image;
+  }
+  .recent-info {
+    grid-area: info;
   }
 }

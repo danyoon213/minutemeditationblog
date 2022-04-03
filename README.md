@@ -10,7 +10,7 @@ Also, those who are logged in but NOT the author of the post will not have acces
 Only the author can delete their own post.
 
 HOME SCREEN now has LOG IN or LOG OUT button on top right.
-![Home](MM-Home.png)
+![Home](MM - Home.png)
 
 ARTICLE SCREEN has no button for "New Articles" if user is not logged in, but has the button if user is logged in.
 
@@ -22,6 +22,8 @@ BLOG PAGE has no button for EDTING or DELETING if user is not logged in OR if us
 ![Home - Blog = No](MM-Blog.png)
 ![Home - Blog = Yes](MM-Blog-Auth.png)
 
+
+---
 
 ---
 

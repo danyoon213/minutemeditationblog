@@ -1,4 +1,30 @@
 # minutemeditationblog
+
+As of April 2, 2022
+User Log In and Registration is up and running!
+
+The NAVBAR now has a Log-In or Log-Out button on the top right, depending on whether someone is logged in or not.
+
+Those who are NOT logged in (not authorized) will not have access to creating new posts and will not have acceess to editing/deleting a post.
+Also, those who are logged in but NOT the author of the post will not have access to editing/deleting another author's posts. 
+Only the author can delete their own post.
+
+HOME SCREEN now has LOG IN or LOG OUT button on top right.
+![Home](MM-Home.png)
+
+ARTICLE SCREEN has no button for "New Articles" if user is not logged in, but has the button if user is logged in.
+
+![Home - Articles = No](MM-Articles.png)
+![Home - Articles = Yes](MM-Articles-Auth.png)
+
+BLOG PAGE has no button for EDTING or DELETING if user is not logged in OR if user is not the author. Only the author can edit or delete their article.
+
+![Home - Blog = No](MM-Blog.png)
+![Home - Blog = Yes](MM-Blog-Auth.png)
+
+
+---
+
 As of March 30, 2022:
 Currently creating a blog site for a Christian writer.
 
